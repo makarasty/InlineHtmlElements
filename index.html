@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>💖 / Inline та не дуже елементи </title>
+	<style>
+		/* Стилі css */
+	</style>
+</head>
+
+<body>
+	<header style="border: 1px solid #ccc; padding: 10px;">
+		<h1>Заголовок Сторінки</h1>
+		<nav>
+			<ul>
+				<li><a href="#section1">Розділ 1</a></li>
+				<li><a href="#section2">Розділ 2</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<article id="section1">
+			<header>
+				<h2>Стаття 1</h2>
+			</header>
+			<section>
+				<h3>Підрозділ</h3>
+				<p><strong>Жирний текст</strong>, <em>курсив</em>, і <abbr title="абревіатура">абрв</abbr>.
+					Приклад використання <code>&lt;code&gt;</code> тега.</p>
+
+				<blockquote cite="http://example.com">
+					Цитата з джерела.
+				</blockquote>
+			</section>
+			<footer>
+				<small>Автор: Жак Фреско</small>
+			</footer>
+		</article>
+
+		<aside>
+			<h4>Бічна панель</h4>
+			<p>Деякі додаткові інформації.</p>
+		</aside>
+
+		<section id="section2">
+			<h2>Форми та Таблиці</h2>
+			<form>
+				<fieldset>
+					<legend>Форма реєстрації</legend>
+					<label for="name">Ім'я:</label>
+					<input type="text" id="name" name="name"><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"><br>
+					<button type="submit">Відправити</button>
+				</fieldset>
+			</form>
+
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Заголовок 1</th>
+						<th>Заголовок 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Дані 1</td>
+						<td>Дані 2</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Низ таблиці</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+		<section>
+			<h2>Вбудовані об'єкти</h2>
+			<figure>
+				<img src="image.jpg" alt="Опис зображення" style="width: 200px; height: auto;">
+				<figcaption>Підпис до зображення</figcaption>
+			</figure>
+
+			<video controls width="250">
+				<source src="video.mp4" type="video/mp4">
+				Ваш браузер не підтримує відео тег.
+			</video>
+		</section>
+	</main>
+
+	<footer style="background-color: #eee; padding: 10px; text-align: center;">
+
+		<p>© 2025 MKY website</p>
+	</footer>
+
+	<address>
+		Відвідайте нас за адресою: <br>
+		Пушкина Калатушкин 666, 76018, Рига
+	</address>
+
+	<hr>
+
+	<ol>
+		<li>Перший пункт</li>
+		<li>Другий пункт</li>
+	</ol>
+
+	<dl>
+		<dt>Термін 1</dt>
+		<dd>Опис терміну 1.</dd>
+		<dt>Термін 2</dt>
+		<dd>Опис терміну 2.</dd>
+	</dl>
+
+	<pre>
+		Попередньо відформатований текст
+		зберігає пробіли і переноси рядків.
+	</pre>
+
+	<figure>
+		<canvas id="KaNaVaS" width="200" height="100" style="border:1px solid #000;">
+			Ваш браузер не підтримує тег canvas.
+		</canvas>
+		<figcaption>Приклад canvas елементу</figcaption>
+	</figure>
+
+	<script>
+		// код JavaScript
+		var canvas = document.getElementById('KaNaVaS');
+		var ctx = canvas.getContext('2d');
+		ctx.fillStyle = 'green';
+		ctx.fillRect(10, 10, 100, 50);
+	</script>
+
+	<noscript>
+		Ваш браузер не підтримує JavaScript або він вимкнений.
+	</noscript>
+
+	<section>
+		<h2>Додаткові елементи</h2>
+
+		<time datetime="2028-01-01">1 січня 2028 року</time>
+
+		<mark>Підсвічений текст.</mark>
+
+		<bdo dir="rtl">Текст написаний справа наліво.</bdo>
+
+		<span style="color: red;">Кольоровий текст</span>
+
+		<sub>Нижній індекс</sub> та <sup>верхній індекс</sup>.
+
+		<small>Малий текст</small>, <big>великий текст</big>, <b>жирний текст</b>, <i>курсив</i>, і <u>підкреслений
+			текст</u>.
+
+		<kbd>Ctrl + S</kbd>
+
+		<samp>Приклад виводу</samp>
+
+		<var>x</var> = <var>y</var> + <var>z</var>;
+
+		<tt>Моноширинний текст</tt>
+
+		<q>Це коротка цитата.</q>
+
+		<blockquote>
+			Це довга цитата, яка може займати кілька рядків і мати свою власну форматування.
+			Це довга цитата, яка може займати кілька рядків і мати свою власну форматування.
+			Це довга цитата, яка може займати кілька рядків і мати свою власну форматування.
+			Це довга цитата, яка може займати кілька рядків і мати свою власну форматування.
+			Це довга цитата, яка може займати кілька рядків і мати свою власну форматування.
+		</blockquote>
+
+		<a href="http://example.com" title="Приклад посилання">Посилання</a>
+
+		<br>
+
+		<button onclick="alert('Привіт!')">Натисни мене</button>
+
+		<select name="options">
+			<option value="option1">Опція 1</option>
+			<option value="option2">Опція 2</option>
+			<option value="option3">Опція 3</option>
+		</select>
+
+		<textarea rows="4" cols="50">
+			Текстова область для введення більшого тексту.
+		</textarea>
+
+		<label for="choice">Виберіть опцію:</label>
+		<input type="radio" id="choice" name="choice" value="option1"> Опція 1
+		<input type="radio" id="choice" name="choice" value="option2"> Опція 2
+
+		<img src="image.jpg" alt="Опис зображення" usemap="#imagemap">
+		< <map name="imagemap">
+			<area shape="rect" coords="34,44,270,350" alt="Частина зображення" href="http://example.com">
+			</map>
+
+			<object data="object.swf" width="400" height="300">
+				<param name="movie" value="object.swf">
+				Ваш браузер не підтримує вставку об'єктів.
+			</object>
+
+			<output name="result">
+				Результати будуть тут.
+			</output>
+
+			<cite>Це цитування джерела.</cite>
+
+			<dfn title="Визначення терміну">Термін</dfn>
+
+			<acronym title="Повна форма скорочення">СКР</acronym>
+
+			<bdi>Текст, що ізолюється від зовнішніх впливів</bdi>
+
+			<progress value="22" max="100"></progress>
+
+	</section>
+</body>
+
+</html>
